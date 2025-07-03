@@ -7,8 +7,7 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-# PS1='\u \w : '
-fastfetch
+
 
 # Colors
 RED="\[\033[0;31m\]"
@@ -27,3 +26,6 @@ parse_git_branch() {
 # PS1 prompt
 export PS1="${GREEN}\u${RESET}@${CYAN}\h${RESET}:${YELLOW}\w${RESET}\
 \$(if git rev-parse --is-inside-work-tree &>/dev/null; then echo \" ${MAGENTA}(\$(parse_git_branch))${RESET}\"; fi)\n\$ "
+
+
+alias gedit='gnome-text-editor'
